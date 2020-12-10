@@ -49,7 +49,7 @@ handle_extension() {
         pdf)
             # Preview as text conversion
             pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - 
-            mutool draw -F txt -i -- "${FILE_PATH}" 1-10 
+#            mutool draw -F txt -i -- "${FILE_PATH}" 1-10 
             exiftool "${FILE_PATH}" 
             exit 1;;
 
