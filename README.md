@@ -1,2 +1,2 @@
-# lf_settings
+# lf_config
 #
