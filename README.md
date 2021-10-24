@@ -1,2 +1,2 @@
 # Настройки консольного файлового менеджера LF
-#https://github.com/gokcehan/lf
+https://github.com/gokcehan/lf
