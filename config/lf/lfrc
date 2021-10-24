@@ -201,7 +201,7 @@ cmd paste-async &{{
 }}
 
 map P paste-async
-map <c-v>l Link
+map <c-l>l Link
 set icons
 #map <c-h> set hidden!
 
@@ -216,11 +216,12 @@ map ge cd /etc
 map gu cd /usr
 map gm cd /Media
 map gf cd /Files
-
+map gb cd /Backups
 
 map <c-x> :cut
 map <c-c> :copy
-
+map <c-v> :paste
+map <esc> :quit
 #map <bs> updir
 map <backspace2> set hidden!
 #map i $~/.config/lf/pv.sh $f | less -R
@@ -237,10 +238,12 @@ cmap <down> cmd-history-next
 #map - $~/.config/lf/draw_img.sh $f
 
 # Создание файла или каталога
-#map <a-n>d push %mkdir<space>
-#map <a-n>f push %touch<space>
+#map <a-d> %mkdir<space>
+#map <a-f> %touch<space>
 cmd create_dir push %mkdir<space>
 cmd create_file push %touch<space>
+map <a-f> create_file
+map <a-d> create_dir
 map <a-n>f create_file
 map <a-n>d create_dir
 
